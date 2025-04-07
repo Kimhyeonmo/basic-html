@@ -1,0 +1,40 @@
+@import url("reset.css");
+
+h1 {
+  color: purple;
+}
+/* css가 id값이 뒤에있는거이라고 생각한다. */
+#home {
+  background-color: navy !important;
+  color: azure;
+}
+/* 1. inline 2. 내부 3. 외부 4. 웹브라우 기본 스타일 스타일 먹는 순위*/
+/* 선택자에 따른 우선순위 1. !import 2. id 스타일 3. css스타일 4. 태크스타일 */
+/* !import는 강제 1순위 그렇게 자주 쓰진 않는다.  */
+
+.section {
+  background-color: red;
+}
+
+#home {
+  background-color: azure;
+}
+/*  */
+.nav-item {
+  list-style: none;
+}
+.nav-home > button {
+  color: blue;
+}
+.nav-list {
+  display: flex;
+}
+/* befor after사용할땐 content 꼭 써줘야 한다. */
+.nav-list > .nav-item::before {
+  content: "";
+  width: 4px;
+  height: 40px;
+  background-color: gray;
+  display: inline-block;
+  margin: 10px;
+}

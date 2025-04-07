@@ -1,0 +1,103 @@
+/* landing.css */
+@import url("reset.css");
+
+/* common */
+button {
+  font-size: 16px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* 전체 페이지 스타일 */
+.wrap {
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* 헤더 및 네비게이션 */
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 15px;
+  margin-left: 20px;
+  transition: color 0.3s ease;
+}
+
+.nav-button:hover {
+  color: #007bff;
+}
+
+/* 메인 컨텐츠 */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.section-title {
+  color: #007bff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* 홈 섹션 */
+.home-section {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.main-title {
+  color: #007bff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.main-description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* CTA 버튼 */
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
